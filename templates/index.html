@@ -1,0 +1,10 @@
+{% extends 'base.jinja2' %}
+
+{% block app_content %}
+    <form action="{{url_for('create_life')}}" method="post" class="form-contact">
+        <p><label>width </label><input type="number" name="width" value="" required></p>
+        <p><label>height </label><input type="number" name="height" value="" required></p>
+        <button type="submit" class="btn btn-primary">Создать жизнь</button>
+    </form>
+
+{% endblock %}
